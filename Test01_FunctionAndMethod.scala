@@ -7,13 +7,21 @@ object Test01_FunctionAndMethod {
     def sayHi(name: String):Unit = {
       println("hi, " + name)
     }
+
+    def sayGoodBye(name: String) : Unit = {
+      println("GoodBye! " + name)
+    }
     //调用函数
-    sayHi("Angela")
+    sayHi("dashagua")
+    sayGoodBye("Maya")
     //调用对象方法（下面那个大写的Hi）
     Test01_FunctionAndMethod.sayHi("bob")
 
+
     //获取方法返回值
+
     val ret = Test01_FunctionAndMethod.sayHello("Amy")
+    val ret0 = Test01_FunctionAndMethod.sayGoodBye("Amy")
     println("==============")
     println(ret)
   }
@@ -24,9 +32,13 @@ object Test01_FunctionAndMethod {
     println("Hi, " + name)
   }
 
-  def sayHello(name: String) : Any = {
-    println("Hello, " + name)
-    return "hello"
+//  def sayHello(name: String) : Any = {
+//    println("Hello, " + name)
+//    return "hello"
+//  }
+
+  def sayGoodBye(name: String) : Unit = {
+    println("GoodBye! " + name)
   }
 
 
