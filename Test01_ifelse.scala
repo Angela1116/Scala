@@ -9,7 +9,7 @@ object Test01_IfElse {
     val age: Int = StdIn.readInt()
 
     //单分支
-    if (age >= 18) {
+    if (age >= 21) {
       println("You are an adult")
     }
 
