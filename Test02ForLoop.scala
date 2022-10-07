@@ -72,5 +72,6 @@ object Test02ForLoop {
     println(i)
   }
   println("a = " + a)
+  println("a = " + a + a)
 
 }
